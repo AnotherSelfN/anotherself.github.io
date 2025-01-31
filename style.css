@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+.tickets, .pity, .pull-buttons, .add-tickets, .reset {
+  margin-bottom: 20px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+.results ul, .inventory ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.inventory #inventoryPages {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.inventory #inventoryPages button {
+  margin: 0 5px;
+}

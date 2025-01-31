@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gacha App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="container">
+    <h1>Gacha App</h1>
+
+    <!-- Tickets Display -->
+    <div class="tickets">
+      <p>Tickets: <span id="ticketCount">0</span></p>
+    </div>
+
+    <!-- Pity Counter -->
+    <div class="pity">
+      <p>Pity Counter: <span id="pityCounter">80</span>/80</p>
+      <button id="resetPity">Reset Pity</button>
+    </div>
+
+    <!-- Pull Buttons -->
+    <div class="pull-buttons">
+      <button id="singlePull">Single Pull (Cost: 1 Ticket)</button>
+      <button id="tenPull">10-Pull (Cost: 10 Tickets)</button>
+    </div>
+
+    <!-- Add Tickets -->
+    <div class="add-tickets">
+      <button id="addSingleTicket">Add Single Pull Ticket</button>
+      <button id="addTenTicket">Add 10-Pull Ticket</button>
+    </div>
+
+    <!-- Reset Button -->
+    <div class="reset">
+      <button id="resetAll">Reset All Data</button>
+    </div>
+
+    <!-- Pull Results -->
+    <div class="results">
+      <h2>Pull Results</h2>
+      <ul id="pullResults"></ul>
+    </div>
+
+    <!-- Inventory -->
+    <div class="inventory">
+      <h2>Inventory</h2>
+      <div id="inventoryPages"></div>
+      <ul id="inventoryList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Register the service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(() => console.log('Service Worker registered'))
+        .catch((error) => console.error('Service Worker registration failed:', error));
+    }
+  </script>
+</body>
+</html>
