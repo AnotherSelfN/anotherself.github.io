@@ -30,7 +30,7 @@ function getRandomItem() {
   // Check if pity is triggered
   if (pityCounter === 0) {
     pityCounter = 80; // Reset pity counter
-    return 'Super Rare Item';
+    return 'Keychain';
   }
 
   // Roll for random item
