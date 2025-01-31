@@ -22,8 +22,8 @@ function updateUI() {
 // Get Random Item with Pity System
 function getRandomItem() {
   const items = [
-    { name: 'Sticker', rarity: 'N-', chance: 0.943 },
-    { name: 'Phone Strap', rarity: 'R-', chance: 0.051 },
+    { name: 'Sticker', rarity: 'N-', chance: 0.976 },
+    { name: 'Phone Strap', rarity: 'R-', chance: 0.018 },
     { name: 'Keychain', rarity: 'SR-', chance: 0.006 },
   ];
 
