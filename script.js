@@ -28,7 +28,7 @@ function getRandomItem() {
   ];
 
   // Check if pity is triggered
-  if (pityCounter === 0) {
+  if (pityCounter === 1) {
     pityCounter = 80; // Reset pity counter
     return 'Keychain';
   }
