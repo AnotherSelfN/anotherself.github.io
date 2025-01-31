@@ -22,9 +22,9 @@ function updateUI() {
 // Get Random Item with Pity System
 function getRandomItem() {
   const items = [
-    { name: 'Sticker', rarity: 'N-', chance: 0.75 },
-    { name: 'Phone Strap', rarity: 'R-', chance: 0.24 },
-    { name: 'Keychain', rarity: 'SR-', chance: 0.01 },
+    { name: 'Sticker', rarity: 'N-', chance: 0.943 },
+    { name: 'Phone Strap', rarity: 'R-', chance: 0.051 },
+    { name: 'Keychain', rarity: 'SR-', chance: 0.006 },
   ];
 
   // Check if pity is triggered
